@@ -3,6 +3,18 @@
 	"EngineAssociation": "UE5.5-Souce",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "Starter",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "StarterEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
