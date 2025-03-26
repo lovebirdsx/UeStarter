@@ -86,6 +86,14 @@ def main():
     else:
         print(f"{uproject_file} 文件不存在。")
 
+
+    # 处理Config/DefaultGame.ini文件
+    default_game_ini = "Config/DefaultGame.ini"
+    if os.path.exists(default_game_ini):
+        process_file(default_game_ini, project_name, pattern)
+    else:
+        print(f"{default_game_ini} 文件不存在。")
+
     # 处理 Source 目录下所有文件内容
     source_dir = "Source"
     if os.path.exists(source_dir):
